@@ -1,7 +1,6 @@
 package modulos.produtos;
 
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import paginas.LoginPage;
@@ -47,7 +46,6 @@ public class ProdutosTest {
 
 
         //Vou validar que a mensagem de erro foi apresentada
-        //<div class="toast rounded" style="top: 0px; opacity: 1;">O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00</div
         Assertions.assertEquals("O valor do produto deve estar entre R$ 0,01 e R$ 7.000,00", mensagemToast);
 
         //Vou fechar o navegador
